@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T03:39:07 IST" name="Default suite" finished-at="2025-07-16T03:39:18 IST" duration-ms="11139">
+  <suite started-at="2025-07-16T06:54:22 IST" name="Default suite" finished-at="2025-07-16T06:54:34 IST" duration-ms="11273">
     <groups>
     </groups>
-    <test started-at="2025-07-16T03:39:07 IST" name="Default test" finished-at="2025-07-16T03:39:18 IST" duration-ms="11139">
+    <test started-at="2025-07-16T06:54:22 IST" name="Default test" finished-at="2025-07-16T06:54:34 IST" duration-ms="11273">
       <class name="selenium.LaunchBrowser">
-        <test-method signature="openGoogleInChrome()[pri:0, instance:selenium.LaunchBrowser@31304f14]" started-at="2025-07-16T03:39:07 IST" name="openGoogleInChrome" finished-at="2025-07-16T03:39:18 IST" duration-ms="10972" status="PASS">
+        <test-method signature="openGoogleInChrome()[pri:0, instance:selenium.LaunchBrowser@31304f14]" started-at="2025-07-16T06:54:23 IST" name="openGoogleInChrome" finished-at="2025-07-16T06:54:34 IST" duration-ms="11114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openGoogleInChrome -->
