@@ -1,5 +1,5 @@
 package selenium;
-
+import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -15,21 +15,21 @@ public class LaunchBrowser {
         WebDriver driver = new ChromeDriver();
 
         // Open Google
-        driver.get("https://www.flipkart.com");
-
-        // Optional: Maximize the browser window
+        driver.get("https://google.com");
         driver.manage().window().maximize();
-
-        // Optional: Print page title
-        System.out.println("Page Title is: " + driver.getTitle());
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        String str=driver.getTitle();
+        System.out.println("Page Title is: " + str);
 
         // Optional: Close the browser after few seconds
         try {
-            Thread.sleep(3000); // wait for 5 seconds
+            Thread.sleep(5000); // wait for 5 seconds
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Assert.assertEquals(driver.getTitle(), "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!");
+        Assert.assertEquals(driver.getTitle(), "Google");
 
         driver.quit();
     }
