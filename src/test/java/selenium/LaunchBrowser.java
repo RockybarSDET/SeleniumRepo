@@ -1,5 +1,7 @@
 package selenium;
 import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -8,20 +10,20 @@ import org.testng.annotations.Test;
 public class LaunchBrowser {
 @Test
     public void openGoogleInChrome() {
-        // Set the path to chromedriver (optional if chromedriver is in system PATH)
+        
         System.setProperty("webdriver.chrome.driver", "C:\\DriversChrome\\chromedriver.exe");
 
-        // Initialize WebDriver
         WebDriver driver = new ChromeDriver();
 
-        // Open Google
-        driver.get("https://google.com");
+        driver.get("https://signup.ebay.com/pa/crte");
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        String str=driver.getTitle();
-        System.out.println("Page Title is: " + str);
+        driver.findElement(By.xpath("//input[@id='gh-ac']")).clear();
+        driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("Box");
+//        String str=driver.getTitle();
+//        System.out.println("Page Title is: " + str);
 
         // Optional: Close the browser after few seconds
         try {
@@ -29,7 +31,7 @@ public class LaunchBrowser {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Assert.assertEquals(driver.getTitle(), "Google");
+       // Assert.assertEquals(driver.getTitle(), "Google");
 
         driver.quit();
     }
