@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="GoogleSearchSuite">
+  <test name="GoogleChromeSearchTest">
+    <parameter name="chromeDriverPath" value="C:\DriversChrome\chromedriver.exe"/>
+    <parameter name="searchTerm" value="Selenium WebDriver"/>
+    <parameter name="url" value="https://www.google.com/"/>
+    
+    <classes>
+      <class name="selenium.LaunchBrowser1"/>
+    </classes>
+  </test>
+</suite>

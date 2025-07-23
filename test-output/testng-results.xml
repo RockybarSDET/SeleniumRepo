@@ -2,16 +2,43 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-22T22:37:35 IST" name="Default suite" finished-at="2025-07-22T22:37:41 IST" duration-ms="5882">
+  <suite started-at="2025-07-23T16:41:27 IST" name="GoogleSearchSuite" finished-at="2025-07-23T16:41:43 IST" duration-ms="16252">
     <groups>
     </groups>
-    <test started-at="2025-07-22T22:37:35 IST" name="Default test" finished-at="2025-07-22T22:37:41 IST" duration-ms="5882">
-      <class name="com.api.tests.LoginAPITest3">
-        <test-method signature="loginTest()[pri:0, instance:com.api.tests.LoginAPITest3@3b0fe47a]" started-at="2025-07-22T22:37:36 IST" name="loginTest" description="Verify if Login API is working..." finished-at="2025-07-22T22:37:41 IST" duration-ms="5704" status="PASS">
+    <test started-at="2025-07-23T16:41:27 IST" name="GoogleChromeSearchTest" finished-at="2025-07-23T16:41:43 IST" duration-ms="16252">
+      <class name="selenium.LaunchBrowser1">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:selenium.LaunchBrowser1@4b29d1d2]" started-at="2025-07-23T16:41:27 IST" name="setUp" finished-at="2025-07-23T16:41:31 IST" duration-ms="4029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\DriversChrome\chromedriver.exe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Selenium WebDriver]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- com.api.tests.LoginAPITest3 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setUp -->
+        <test-method signature="openGoogleInChrome(java.lang.String)[pri:0, instance:selenium.LaunchBrowser1@4b29d1d2]" started-at="2025-07-23T16:41:31 IST" name="openGoogleInChrome" finished-at="2025-07-23T16:41:43 IST" duration-ms="11436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openGoogleInChrome -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.LaunchBrowser1@4b29d1d2]" started-at="2025-07-23T16:41:43 IST" name="tearDown" finished-at="2025-07-23T16:41:43 IST" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium.LaunchBrowser1 -->
+    </test> <!-- GoogleChromeSearchTest -->
+  </suite> <!-- GoogleSearchSuite -->
 </testng-results>
