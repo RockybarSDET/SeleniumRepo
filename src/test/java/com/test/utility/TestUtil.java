@@ -11,6 +11,7 @@ public class TestUtil {
 	public static  ArrayList<Object[]> getDataFromExcel() {
 		
 		ArrayList<Object[]> mydata = new ArrayList<Object[]>();
+		
 		try {
 			reader = new Xlsx_Reader("C:\\Users\\Acer\\OneDrive\\Desktop\\Test_Data.xlsx");
 		} catch(Exception e) {
