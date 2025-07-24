@@ -34,6 +34,7 @@ public class HalfEbayTest {
 
 }
 	@DataProvider
+	
 	public Iterator<Object[]> getTestData() {
 		ArrayList<Object[]> testdata = TestUtil.getDataFromExcel();
 		return testdata.iterator();

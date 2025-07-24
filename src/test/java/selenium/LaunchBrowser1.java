@@ -45,7 +45,7 @@ public class LaunchBrowser1 {
 
         String title = driver.getTitle();
         System.out.println("Page Title: " + title);
-        Assert.assertTrue(title.contains("Selenium"), "Title does not contain expected text.");
+        Assert.assertTrue(title.contains("Selenium"), title);
     }
 
     @AfterMethod
