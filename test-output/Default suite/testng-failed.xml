@@ -5,7 +5,9 @@
     <classes>
       <class name="selenium.LaunchBrowser">
         <methods>
+          <include name="tearDown"/>
           <include name="openGoogleInChrome"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- selenium.LaunchBrowser -->
     </classes>

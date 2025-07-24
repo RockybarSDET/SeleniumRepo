@@ -1,36 +1,51 @@
 package selenium;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LaunchBrowser {
-@Test
-    public void openGoogleInChrome() {
-        // Set the path to chromedriver (optional if chromedriver is in system PATH)
+
+    WebDriver driver;
+
+    @BeforeMethod
+    public void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:\\DriversChrome\\chromedriver.exe");
-
-        // Initialize WebDriver
-        WebDriver driver = new ChromeDriver();
-
-        // Open Google
-        driver.get("https://www.flipkart.com");
-
-        // Optional: Maximize the browser window
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    }
 
-        // Optional: Print page title
-        System.out.println("Page Title is: " + driver.getTitle());
+    @Test
+    public void openGoogleInChrome() throws InterruptedException {
+        driver.get("https://www.google.com/");
 
-        // Optional: Close the browser after few seconds
-        try {
-            Thread.sleep(3000); // wait for 5 seconds
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        Assert.assertEquals(driver.getTitle(), "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!");
+        // Clear and enter search term
+        driver.findElement(By.xpath("//textarea[@id='APjFqb']")).clear();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys("Selenium WebDriver");
+        Thread.sleep(3000);
+        // Hit ENTER instead of clicking the button (more reliable)
+        driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys(Keys.ENTER);
+        Thread.sleep(5000);
+        String title = driver.getTitle();
+        // Wait for page to load and title to change
+        Thread.sleep(5000);
+        System.out.println("Page Title: " + title);
+        Assert.assertTrue(title.contains("Selenium"), "Title does not contain expected text.");
+    }
 
+    @AfterMethod
+    public void tearDown() {
         driver.quit();
     }
 }

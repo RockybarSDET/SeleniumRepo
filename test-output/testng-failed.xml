@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [GoogleSearchSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GoogleChromeSearchTest(failed)">
+    <parameter name="searchTerm" value="Selenium WebDriver"/>
+    <parameter name="chromeDriverPath" value="C:\DriversChrome\chromedriver.exe"/>
+    <parameter name="url" value="https://www.google.com/"/>
     <classes>
-      <class name="selenium.LaunchBrowser">
+      <class name="selenium.LaunchBrowser1">
         <methods>
           <include name="openGoogleInChrome"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- selenium.LaunchBrowser -->
+      </class> <!-- selenium.LaunchBrowser1 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- GoogleChromeSearchTest(failed) -->
+</suite> <!-- Failed suite [GoogleSearchSuite] -->
