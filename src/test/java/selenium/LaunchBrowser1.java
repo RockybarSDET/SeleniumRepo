@@ -2,6 +2,7 @@ package selenium;
 
 
 import java.time.Duration;
+import org.testng.annotations.Test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

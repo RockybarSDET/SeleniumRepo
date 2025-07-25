@@ -22,7 +22,7 @@ public class HalfEbayTest {
 			System.setProperty("webdriver.chrome.driver", "C:\\DriversChrome\\chromedriver.exe");
 			driver = new ChromeDriver();
 	        driver.manage().window().maximize();
-	        //driver.manage().deleteAllCookies();
+	        driver.manage().deleteAllCookies();
 	        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 	        driver.get("https://signup.ebay.com/pa/crte?ru=https%3A%2F%2Fwww.ebay.com%2F");
