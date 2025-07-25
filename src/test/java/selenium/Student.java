@@ -19,7 +19,7 @@ public class Student {
     public void displayStudentDetails() {
         System.out.println("Name: " + name);
         System.out.println("Roll Number: " + rollNumber);
-        System.out.println("School Name: " + schoolName);  // accessing static variable
+        System.out.println("School Name: " + Student.schoolName);  // accessing static variable
         System.out.println("----------------------------");
     }
 
