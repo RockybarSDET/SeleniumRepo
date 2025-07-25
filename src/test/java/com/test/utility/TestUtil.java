@@ -1,12 +1,10 @@
 package com.test.utility;
-
 import java.util.ArrayList;
-
 import com.excel.utility.Xlsx_Reader;
 
 public class TestUtil {
 	
-	static Xlsx_Reader reader;
+	 static Xlsx_Reader reader;
 	
 	public static  ArrayList<Object[]> getDataFromExcel() {
 		
