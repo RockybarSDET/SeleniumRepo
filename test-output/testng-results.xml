@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-26T20:05:31 IST" name="Default suite" finished-at="2025-07-26T20:05:39 IST" duration-ms="8023">
+  <suite started-at="2025-07-26T21:31:29 IST" name="Default suite" finished-at="2025-07-26T21:31:38 IST" duration-ms="8736">
     <groups>
     </groups>
-    <test started-at="2025-07-26T20:05:31 IST" name="Default test" finished-at="2025-07-26T20:05:39 IST" duration-ms="8023">
+    <test started-at="2025-07-26T21:31:29 IST" name="Default test" finished-at="2025-07-26T21:31:38 IST" duration-ms="8736">
       <class name="com.api.web2.GetProfileRequestTest">
-        <test-method signature="getProfileInfoTest()[pri:0, instance:com.api.web2.GetProfileRequestTest@19e4653c]" started-at="2025-07-26T20:05:31 IST" name="getProfileInfoTest" finished-at="2025-07-26T20:05:39 IST" duration-ms="7841" status="PASS">
+        <test-method signature="getProfileInfoTest()[pri:0, instance:com.api.web2.GetProfileRequestTest@19e4653c]" started-at="2025-07-26T21:31:29 IST" name="getProfileInfoTest" finished-at="2025-07-26T21:31:38 IST" duration-ms="8526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProfileInfoTest -->
