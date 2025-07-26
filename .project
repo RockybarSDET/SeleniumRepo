@@ -20,11 +20,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/test/java/com/data/Test_Data.xlsx</name>
-			<type>1</type>
-			<location>C:/Users/Acer/OneDrive/Desktop/Test_Data.xlsx</location>
-		</link>
-	</linkedResources>
 </projectDescription>
