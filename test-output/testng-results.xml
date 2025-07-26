@@ -2,16 +2,43 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-26T21:31:29 IST" name="Default suite" finished-at="2025-07-26T21:31:38 IST" duration-ms="8736">
+  <suite started-at="2025-07-27T03:44:23 IST" name="Default suite" finished-at="2025-07-27T03:44:42 IST" duration-ms="19484">
     <groups>
     </groups>
-    <test started-at="2025-07-26T21:31:29 IST" name="Default test" finished-at="2025-07-26T21:31:38 IST" duration-ms="8736">
-      <class name="com.api.web2.GetProfileRequestTest">
-        <test-method signature="getProfileInfoTest()[pri:0, instance:com.api.web2.GetProfileRequestTest@19e4653c]" started-at="2025-07-26T21:31:29 IST" name="getProfileInfoTest" finished-at="2025-07-26T21:31:38 IST" duration-ms="8526" status="PASS">
+    <test started-at="2025-07-27T03:44:23 IST" name="Default test" finished-at="2025-07-27T03:44:42 IST" duration-ms="19484">
+      <class name="selenium.LaunchBrowser1">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:selenium.LaunchBrowser1@3f191845]" started-at="2025-07-27T03:44:23 IST" name="setUp" finished-at="2025-07-27T03:44:27 IST" duration-ms="4552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\DriversChrome\chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getProfileInfoTest -->
-      </class> <!-- com.api.web2.GetProfileRequestTest -->
+        </test-method> <!-- setUp -->
+        <test-method signature="openGoogleInChrome(java.lang.String,java.lang.String)[pri:0, instance:selenium.LaunchBrowser1@3f191845]" started-at="2025-07-27T03:44:27 IST" name="openGoogleInChrome" finished-at="2025-07-27T03:44:40 IST" duration-ms="12396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Selenium WebDriver]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openGoogleInChrome -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.LaunchBrowser1@3f191845]" started-at="2025-07-27T03:44:40 IST" name="tearDown" finished-at="2025-07-27T03:44:42 IST" duration-ms="2342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium.LaunchBrowser1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -14,14 +14,14 @@ import org.testng.annotations.*;
 public class LaunchBrowser1 {
 
     WebDriver driver;
-    String searchKeyword;
+//    String searchKeyword;
 
-    @Parameters({"chromeDriverPath", "searchTerm"})
+    @Parameters({"chromeDriverPath"})
     @BeforeMethod
-    public void setUp(String chromeDriverPath, String searchTerm) {
+    public void setUp(String chromeDriverPath) {
         System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         //searchKeyword = searchTerm;
-        searchKeyword=searchTerm;
+//        searchKeyword=searchTerm;
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -31,14 +31,14 @@ public class LaunchBrowser1 {
     }
 
     @Test
-    @Parameters({"url"})
-    public void openGoogleInChrome(String url) throws InterruptedException {
+    @Parameters({"url", "searchTerm"})
+    public void openGoogleInChrome(String url,String searchTerm) throws InterruptedException {
         driver.get(url);
 
         driver.findElement(By.xpath("//textarea[@id='APjFqb']")).clear();
         Thread.sleep(2000);
 
-        driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys(searchKeyword);
+        driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys(searchTerm);
         Thread.sleep(2000);
 
         driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys(Keys.ENTER);
