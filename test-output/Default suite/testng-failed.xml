@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.api.web2.GetProfileRequestTest">
+      <class name="com.testngListenerConcept.ScreenshotTest">
         <methods>
-          <include name="getProfileInfoTest"/>
+          <include name="tearDown"/>
+          <include name="takeScreenshotTest1"/>
+          <include name="setUp"/>
+          <include name="takeScreenshotTest2"/>
+          <include name="takeScreenshotTest3"/>
         </methods>
-      </class> <!-- com.api.web2.GetProfileRequestTest -->
+      </class> <!-- com.testngListenerConcept.ScreenshotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
