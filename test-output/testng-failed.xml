@@ -6,10 +6,10 @@
       <class name="com.testngListenerConcept.ScreenshotTest">
         <methods>
           <include name="tearDown"/>
-          <include name="takeScreenshotTest1"/>
+          <include name="test1"/>
           <include name="setUp"/>
-          <include name="takeScreenshotTest2"/>
-          <include name="takeScreenshotTest3"/>
+          <include name="test2"/>
+          <include name="test3"/>
         </methods>
       </class> <!-- com.testngListenerConcept.ScreenshotTest -->
     </classes>
