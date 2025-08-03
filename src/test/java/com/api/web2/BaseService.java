@@ -1,5 +1,4 @@
 package com.api.web2;
-import com.api.models.request.LoginRequest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

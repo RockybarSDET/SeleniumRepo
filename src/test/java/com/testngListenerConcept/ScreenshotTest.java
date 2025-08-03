@@ -11,6 +11,7 @@ public class ScreenshotTest extends Base {
 	
 	@BeforeMethod
 	public void setUp() {
+		
 		Base.initialize();
 		
 	}

@@ -28,7 +28,6 @@ public class LaunchBrowser {
     @Test
     public void openGoogleInChrome() throws InterruptedException {
         driver.get("https://www.google.com/");
-
         // Clear and enter search term
         driver.findElement(By.xpath("//textarea[@id='APjFqb']")).clear();
         Thread.sleep(3000);
