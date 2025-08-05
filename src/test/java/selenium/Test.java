@@ -25,7 +25,7 @@ public class Test {
 		System.out.println(s3.getAge());
 		System.out.println(s3.getId());
 		System.out.println(Student2.count);
-		System.out.println(s3.count);
+		School instance=School.getinstance();
 	}
 
 }
