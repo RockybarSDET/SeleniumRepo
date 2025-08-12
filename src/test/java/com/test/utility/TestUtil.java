@@ -11,7 +11,7 @@ public class TestUtil {
 		ArrayList<Object[]> mydata = new ArrayList<Object[]>();
 		
 		try {
-			reader = new Xlsx_Reader("C:\\Users\\Acer\\OneDrive\\Desktop\\Test_Data.xlsx");
+			reader = new Xlsx_Reader("C:\\Users\\Acer\\eclipse-workspace\\seleniumwebdriver\\src\\test\\resources\\Test_Data.xlsx");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

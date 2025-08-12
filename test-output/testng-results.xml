@@ -1,141 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-13T01:04:48 IST" name="ParallelBrowserSuite" finished-at="2025-08-13T01:05:25 IST" duration-ms="37624">
+  <suite started-at="2025-08-13T01:55:39 IST" name="Default suite" finished-at="2025-08-13T01:56:28 IST" duration-ms="48824">
     <groups>
     </groups>
-    <test started-at="2025-08-13T01:04:48 IST" name="ChromeTest" finished-at="2025-08-13T01:05:08 IST" duration-ms="20135">
-      <class name="com.testclass.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testclass.LoginTest@5f049ea1]" started-at="2025-08-13T01:04:48 IST" name="setUp" finished-at="2025-08-13T01:04:57 IST" duration-ms="8788" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-08-13T01:55:39 IST" name="Default test" finished-at="2025-08-13T01:56:28 IST" duration-ms="48824">
+      <class name="selenium.HalfEbayTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:selenium.HalfEbayTest@33bc72d1]" started-at="2025-08-13T01:55:42 IST" name="setup" finished-at="2025-08-13T01:55:54 IST" duration-ms="11857" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.testclass.LoginTest@5f049ea1]" started-at="2025-08-13T01:04:57 IST" name="invalidLoginTest" finished-at="2025-08-13T01:04:58 IST" duration-ms="1525" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="halfEbayRegTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:selenium.HalfEbayTest@33bc72d1]" started-at="2025-08-13T01:55:54 IST" name="halfEbayRegTest" data-provider="getTestData" finished-at="2025-08-13T01:56:26 IST" duration-ms="32540" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[rockybar]]>
+                <![CDATA[Rockybar]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[rocky@130589]]>
+                <![CDATA[Rahaman]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rocky_rahaman@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hello]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testclass.LoginTest@5f049ea1]" started-at="2025-08-13T01:04:58 IST" name="tearDown" finished-at="2025-08-13T01:04:59 IST" duration-ms="839" status="PASS">
+        </test-method> <!-- halfEbayRegTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:selenium.HalfEbayTest@33bc72d1]" started-at="2025-08-13T01:56:26 IST" name="teardown" finished-at="2025-08-13T01:56:28 IST" duration-ms="1189" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testclass.LoginTest@5f049ea1]" started-at="2025-08-13T01:04:59 IST" name="setUp" finished-at="2025-08-13T01:05:05 IST" duration-ms="6020" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.testclass.LoginTest@5f049ea1]" started-at="2025-08-13T01:05:05 IST" name="validLoginTest" finished-at="2025-08-13T01:05:07 IST" duration-ms="2164" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testclass.LoginTest@5f049ea1]" started-at="2025-08-13T01:05:07 IST" name="tearDown" finished-at="2025-08-13T01:05:08 IST" duration-ms="555" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testclass.LoginTest -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2025-08-13T01:04:48 IST" name="FirefoxTest" finished-at="2025-08-13T01:05:25 IST" duration-ms="37624">
-      <class name="com.testclass.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testclass.LoginTest@14fc5f04]" started-at="2025-08-13T01:04:48 IST" name="setUp" finished-at="2025-08-13T01:05:03 IST" duration-ms="15214" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.testclass.LoginTest@14fc5f04]" started-at="2025-08-13T01:05:03 IST" name="invalidLoginTest" finished-at="2025-08-13T01:05:04 IST" duration-ms="1371" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rockybar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[rocky@130589]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testclass.LoginTest@14fc5f04]" started-at="2025-08-13T01:05:04 IST" name="tearDown" finished-at="2025-08-13T01:05:07 IST" duration-ms="2706" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testclass.LoginTest@14fc5f04]" started-at="2025-08-13T01:05:07 IST" name="setUp" finished-at="2025-08-13T01:05:21 IST" duration-ms="14167" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:com.testclass.LoginTest@14fc5f04]" started-at="2025-08-13T01:05:21 IST" name="validLoginTest" finished-at="2025-08-13T01:05:23 IST" duration-ms="1565" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tomsmith]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SuperSecretPassword!]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testclass.LoginTest@14fc5f04]" started-at="2025-08-13T01:05:23 IST" name="tearDown" finished-at="2025-08-13T01:05:25 IST" duration-ms="2396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testclass.LoginTest -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- ParallelBrowserSuite -->
+        </test-method> <!-- teardown -->
+      </class> <!-- selenium.HalfEbayTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
