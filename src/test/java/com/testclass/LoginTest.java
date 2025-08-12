@@ -47,16 +47,15 @@ public class LoginTest {
     @Test
     public void validLoginTest(String username, String password) {
         loginPage.login(username, password);
-        //Assert.assertEquals(driver.getTitle(), "Dashboard", "Login failed for valid credentials");
+        Assert.assertTrue(loginPage.loginvalidation().contains("Logout"),"Error message mismatch");
+        
     }
 
     @Parameters({"wusername","wpassword"})
     @Test
     public void invalidLoginTest(String wusername, String wpassword) {
         loginPage.login(wusername, wpassword);
-        
-        Assert.assertTrue(loginPage.invalidCredentials().contains("invalid"),
-                "Error message mismatch");
+        Assert.assertTrue(loginPage.loginfailed().contains("invalid"),"Error message mismatch");
     }
 
     @AfterMethod

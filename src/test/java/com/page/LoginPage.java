@@ -18,9 +18,12 @@ public class LoginPage {
 
     @FindBy(xpath = "//i[@class='fa fa-2x fa-sign-in']")
     WebElement loginButton;
+    
+    @FindBy(xpath = "//i[@class='icon-2x icon-signout']")
+    WebElement loginvalidation;
 
     @FindBy(xpath = "//div[@id='flash']")
-    WebElement invalidation;
+    WebElement loginfailed;
     
     // Constructor to initialize WebDriver and elements
     public LoginPage(WebDriver driver) {
@@ -42,9 +45,13 @@ public class LoginPage {
     public void clickLogin() {
         loginButton.click();
     }
+    
+    public String loginvalidation() {
+ 	   return loginvalidation.getText();
+    }
 
-   public String invalidCredentials() {
-	   return invalidation.getText();
+   public String loginfailed() {
+	   return loginfailed.getText();
    }
 
     public void login(String username, String password) {
