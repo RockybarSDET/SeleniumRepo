@@ -21,7 +21,6 @@ public class Student3 {
 		        	StringBuffer sb=new StringBuffer(str);
 			        String s2=sb.reverse().toString();
 			        list1.set(count,s2);
-		        	
 		        }
 		        
 		        count++;
@@ -32,9 +31,19 @@ public class Student3 {
 		      String s3=String.join(" ",list1);
 		      System.out.println(s3);
 		      
+		      
+//		      String s1="You Shall not pass";
+//		      String s2[]=s1.split(" ");
+//		      String result="";
+//		      for (int i=s2.length-1;i>=0;i--)
+//		      {
+//		    	  result+=s2[i]+" ";
+//		      }
+//		      System.out.println(result);
+		      }
 		  }
 
 
-	}
+	
 
 

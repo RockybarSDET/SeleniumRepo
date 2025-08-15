@@ -25,9 +25,9 @@ public class Base {
 	
 	public void failed(String testMethodName) {
 		
-		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(scrFile, new File("C:\\Users\\Acer\\eclipse-workspace\\seleniumwebdriver\\screenshots\\"
+			FileUtils.copyFile(srcFile, new File("C:\\Users\\Acer\\eclipse-workspace\\seleniumwebdriver\\screenshots\\"
 					+testMethodName+".jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
