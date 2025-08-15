@@ -1,0 +1,27 @@
+<suite name="ParallelBrowserSuite" parallel="tests" thread-count="2">
+
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome" />
+		<parameter name="username" value="tomsmith" />
+		<parameter name="password" value="SuperSecretPassword!" />
+		<parameter name="wusername" value="rockybar" />
+		<parameter name="wpassword" value="rocky@130589" />
+
+		<classes>
+			<class name="com.testclass.LoginTest" />
+		</classes>
+	</test>
+
+	<test name="FirefoxTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="username" value="tomsmith" />
+		<parameter name="password" value="SuperSecretPassword!" />
+		<parameter name="wusername" value="rockybar" />
+		<parameter name="wpassword" value="rocky@130589" />
+
+		<classes>
+			<class name="com.testclass.LoginTest" />
+		</classes>
+	</test>
+
+</suite>

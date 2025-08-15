@@ -8,8 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-
-import java.time.Duration;
 import org.testng.annotations.Parameters;
 import com.page.LoginPage;
 
@@ -22,6 +20,7 @@ public class LoginTest {
     @BeforeMethod
     
     public void setUp(String browser) {
+    	
         if (browser.equalsIgnoreCase("chrome")) {
             System.setProperty("webdriver.chrome.driver", "C:\\DriversChrome\\chromedriver.exe");
             driver = new ChromeDriver();
@@ -36,10 +35,12 @@ public class LoginTest {
             throw new IllegalArgumentException("Invalid browser value: " + browser);
         }
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
+//        driver.manage().deleteAllCookies();
+//        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://the-internet.herokuapp.com/login");
-
+        
         loginPage = new LoginPage(driver);
     }
 

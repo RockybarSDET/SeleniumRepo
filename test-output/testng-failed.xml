@@ -10,27 +10,12 @@
     <classes>
       <class name="com.testclass.LoginTest">
         <methods>
-          <include name="validLoginTest" invocation-numbers="0"/>
+          <include name="validLoginTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="invalidLoginTest"/>
         </methods>
       </class> <!-- com.testclass.LoginTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
-  <test thread-count="2" parallel="tests" name="FirefoxTest(failed)">
-    <parameter name="password" value="SuperSecretPassword!"/>
-    <parameter name="wusername" value="rockybar"/>
-    <parameter name="browser" value="firefox"/>
-    <parameter name="wpassword" value="rocky@130589"/>
-    <parameter name="username" value="tomsmith"/>
-    <classes>
-      <class name="com.testclass.LoginTest">
-        <methods>
-          <include name="validLoginTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.testclass.LoginTest -->
-    </classes>
-  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [ParallelBrowserSuite] -->

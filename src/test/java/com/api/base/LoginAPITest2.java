@@ -17,7 +17,7 @@ public class LoginAPITest2 {
 		Response response2= RestAssured.given().baseUri("http://64.227.160.186:8080").contentType(ContentType.URLENC)
 				.formParam("username", "rocky1234")
 			    .formParam("password", "rocky1234").post("/api/auth/login");
-				
+		
 		System.out.println(response.asPrettyString());
 		System.out.println(response2.asPrettyString());
 		Assert.assertEquals(response.getStatusCode(), 200);
