@@ -7,7 +7,7 @@ public class Student3 {
 
 	public static void main(String[] args) {
 			      
-		      String s1="Rahul is the actual person responsible".trim();
+		      String s1="Rahul is the AcTuAl person responsible".trim();
 		      String[] arr1=s1.split(" ");
 		      ArrayList<String> list1=new ArrayList<>(Arrays.asList(arr1));
 		      ArrayList<String> list2=new ArrayList<>();
