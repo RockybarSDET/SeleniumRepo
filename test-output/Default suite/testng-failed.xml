@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testclass.AmazonTest">
+      <class name="com.testngListenerConcept.ScreenshotTest">
         <methods>
-          <include name="openAmazonInChrome"/>
           <include name="tearDown"/>
+          <include name="test1"/>
           <include name="setUp"/>
+          <include name="test2"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- com.testclass.AmazonTest -->
+      </class> <!-- com.testngListenerConcept.ScreenshotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

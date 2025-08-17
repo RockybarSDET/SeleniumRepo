@@ -7,13 +7,16 @@ public class FruitOrderParser {
 	
 public static void main(String[] args) {
 	
-			    String input = "I ordered 23  apples 3 bananas and 4 oranges and 5 kiwis";
+			    String input = "I ordered 23  apples 3 bananas 4 oranges and 5 kiwis";
 
 		        // Use regex to find patterns: number followed by word
 		        Pattern pattern = Pattern.compile("(\\d+)\\s+(\\w+)");
 		        Matcher matcher = pattern.matcher(input);
 
-		        Map<String, Integer> fruitMap = new LinkedHashMap<>();
+		        //Map<String, Integer> fruitMap = new LinkedHashMap<>();
+		        
+		        Map<String, Integer> fruitMap = new  HashMap<>();
+
 
 		        while (matcher.find()) {
 		            int quantity = Integer.parseInt(matcher.group(1));
