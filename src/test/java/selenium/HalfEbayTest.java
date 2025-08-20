@@ -7,7 +7,10 @@ import java.util.Iterator;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -21,7 +24,7 @@ public class HalfEbayTest {
 	{
 			System.setProperty("webdriver.chrome.driver", "C:\\DriversChrome\\chromedriver.exe");
 			driver = new ChromeDriver();
-	        driver.manage().window().maximize();
+			driver.manage().window().maximize();
 	        driver.manage().deleteAllCookies();
 	        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
@@ -42,7 +45,10 @@ public class HalfEbayTest {
 	@Test(dataProvider="getTestData")
 	public void halfEbayRegTest(String firstname, String lastname, String email,String password) throws InterruptedException
 	{
-		driver.findElement(By.xpath("//button[@id='personalaccount-radio']")).click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement button = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='personalaccount-radio']")));
+		button.click();
+		//driver.findElement(By.xpath("//button[@id='personalaccount-radio']")).click();
 		
 		driver.findElement(By.xpath("//input[@id='firstname']")).clear();
 		driver.findElement(By.xpath("//input[@id='firstname']")).sendKeys(firstname);

@@ -2,16 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-20T18:42:07 IST" name="Default suite" finished-at="2025-08-20T18:42:15 IST" duration-ms="7802">
+  <suite started-at="2025-08-20T20:13:21 IST" name="Default suite" finished-at="2025-08-20T20:14:16 IST" duration-ms="54929">
     <groups>
     </groups>
-    <test started-at="2025-08-20T18:42:07 IST" name="Default test" finished-at="2025-08-20T18:42:15 IST" duration-ms="7802">
-      <class name="com.api.web2.GetProfileRequestTest">
-        <test-method signature="getProfileInfoTest()[pri:0, instance:com.api.web2.GetProfileRequestTest@58cbafc2]" started-at="2025-08-20T18:42:07 IST" name="getProfileInfoTest" description="Verify if Login API is working..." finished-at="2025-08-20T18:42:14 IST" duration-ms="7567" status="PASS">
+    <test started-at="2025-08-20T20:13:21 IST" name="Default test" finished-at="2025-08-20T20:14:16 IST" duration-ms="54929">
+      <class name="selenium.HalfEbayTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:selenium.HalfEbayTest@5524cca1]" started-at="2025-08-20T20:13:24 IST" name="setup" finished-at="2025-08-20T20:13:45 IST" duration-ms="20486" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getProfileInfoTest -->
-      </class> <!-- com.api.web2.GetProfileRequestTest -->
+        </test-method> <!-- setup -->
+        <test-method signature="halfEbayRegTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:selenium.HalfEbayTest@5524cca1]" started-at="2025-08-20T20:13:45 IST" name="halfEbayRegTest" data-provider="getTestData" finished-at="2025-08-20T20:14:15 IST" duration-ms="30201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rockybar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rahaman]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rocky_rahaman@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- halfEbayRegTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:selenium.HalfEbayTest@5524cca1]" started-at="2025-08-20T20:14:15 IST" name="teardown" finished-at="2025-08-20T20:14:16 IST" duration-ms="1252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- selenium.HalfEbayTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
