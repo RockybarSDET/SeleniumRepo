@@ -10,7 +10,7 @@ public class BaseService { //WRAPPER for RestAssured
 	//CREATING THE REQUEST
 	//HANDLING THE RESPONSE
 	
-	private static final String BASE_URL="https://swift.techwithjatin.com/";
+	private static final String BASE_URL="http://64.227.160.186:8080";
 	private RequestSpecification requestspecification;
 	
 	public BaseService() {

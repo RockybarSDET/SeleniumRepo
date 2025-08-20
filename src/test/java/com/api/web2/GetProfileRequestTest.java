@@ -8,7 +8,7 @@ import com.api.models.response.UserProfileResponse;
 import io.restassured.response.Response;
 
 public class GetProfileRequestTest {
-	@Test
+	@Test(description = "Verify if Login API is working...")
 	public void getProfileInfoTest() {
 		
 		LoginRequest loginRequest=new LoginRequest("rocky1234","rocky1234");
