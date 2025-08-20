@@ -29,7 +29,7 @@ public class LaunchBrowser1 {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
-
+   
     @Test
     @Parameters({"url", "searchTerm"})
     public void openGoogleInChrome(String url,String searchTerm) throws InterruptedException {
