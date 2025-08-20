@@ -1,47 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-20T20:13:21 IST" name="Default suite" finished-at="2025-08-20T20:14:16 IST" duration-ms="54929">
+  <suite started-at="2025-08-21T02:14:53 IST" name="ParallelBrowserSuite" finished-at="2025-08-21T02:15:13 IST" duration-ms="20247">
     <groups>
     </groups>
-    <test started-at="2025-08-20T20:13:21 IST" name="Default test" finished-at="2025-08-20T20:14:16 IST" duration-ms="54929">
-      <class name="selenium.HalfEbayTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:selenium.HalfEbayTest@5524cca1]" started-at="2025-08-20T20:13:24 IST" name="setup" finished-at="2025-08-20T20:13:45 IST" duration-ms="20486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="halfEbayRegTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:selenium.HalfEbayTest@5524cca1]" started-at="2025-08-20T20:13:45 IST" name="halfEbayRegTest" data-provider="getTestData" finished-at="2025-08-20T20:14:15 IST" duration-ms="30201" status="PASS">
+    <test started-at="2025-08-21T02:14:53 IST" name="ChromeTest1" finished-at="2025-08-21T02:15:10 IST" duration-ms="17500">
+      <class name="selenium.LaunchBrowser1">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:selenium.LaunchBrowser1@cb0755b]" started-at="2025-08-21T02:14:53 IST" name="setUp" finished-at="2025-08-21T02:14:58 IST" duration-ms="4822" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Rockybar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Rahaman]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[rocky_rahaman@yahoo.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Hello]]>
+                <![CDATA[C:\DriversChrome\chromedriver.exe]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- halfEbayRegTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:selenium.HalfEbayTest@5524cca1]" started-at="2025-08-20T20:14:15 IST" name="teardown" finished-at="2025-08-20T20:14:16 IST" duration-ms="1252" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="openGoogleInChrome(java.lang.String,java.lang.String)[pri:0, instance:selenium.LaunchBrowser1@cb0755b]" started-at="2025-08-21T02:14:58 IST" name="openGoogleInChrome" finished-at="2025-08-21T02:15:10 IST" duration-ms="11981" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Selenium WebDriver]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- selenium.HalfEbayTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- openGoogleInChrome -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.LaunchBrowser1@cb0755b]" started-at="2025-08-21T02:15:10 IST" name="tearDown" finished-at="2025-08-21T02:15:10 IST" duration-ms="515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium.LaunchBrowser1 -->
+    </test> <!-- ChromeTest1 -->
+    <test started-at="2025-08-21T02:14:53 IST" name="ChromeTest2" finished-at="2025-08-21T02:15:13 IST" duration-ms="20247">
+      <class name="selenium.LaunchBrowser1">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:selenium.LaunchBrowser1@740fb309]" started-at="2025-08-21T02:14:53 IST" name="setUp" finished-at="2025-08-21T02:14:58 IST" duration-ms="4829" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\DriversChrome\chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="openGoogleInChrome(java.lang.String,java.lang.String)[pri:0, instance:selenium.LaunchBrowser1@740fb309]" started-at="2025-08-21T02:14:58 IST" name="openGoogleInChrome" finished-at="2025-08-21T02:15:12 IST" duration-ms="14700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Selenium WebDriver]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openGoogleInChrome -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.LaunchBrowser1@740fb309]" started-at="2025-08-21T02:15:12 IST" name="tearDown" finished-at="2025-08-21T02:15:13 IST" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium.LaunchBrowser1 -->
+    </test> <!-- ChromeTest2 -->
+  </suite> <!-- ParallelBrowserSuite -->
 </testng-results>

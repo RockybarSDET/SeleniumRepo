@@ -3,7 +3,10 @@ package selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import com.testngListenerConcept.CustomListener;
 
 public class LaunchBrowser2 {
 @Test
@@ -29,8 +32,8 @@ public class LaunchBrowser2 {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Assert.assertEquals(driver.getTitle(), "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!");
-
+       // Assert.assertEquals(driver.getTitle(), "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!");
+        Assert.assertTrue(false);
         driver.quit();
     }
 }

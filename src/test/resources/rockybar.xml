@@ -1,26 +1,22 @@
 <suite name="ParallelBrowserSuite" parallel="tests" thread-count="2">
 
-	<test name="ChromeTest">
-		<parameter name="browser" value="chrome" />
-		<parameter name="username" value="tomsmith" />
-		<parameter name="password" value="SuperSecretPassword!" />
-		<parameter name="wusername" value="rockybar" />
-		<parameter name="wpassword" value="rocky@130589" />
+	<test name="ChromeTest1">
+		<parameter name="chromeDriverPath" value="C:\DriversChrome\chromedriver.exe" />
+		<parameter name="searchTerm" value="Selenium WebDriver" />
+		<parameter name="url" value="https://www.google.com/" />
 
 		<classes>
-			<class name="com.testclass.LoginTest" />
+			<class name="selenium.LaunchBrowser1" />
 		</classes>
 	</test>
 
-	<test name="FirefoxTest">
-		<parameter name="browser" value="firefox" />
-		<parameter name="username" value="tomsmith" />
-		<parameter name="password" value="SuperSecretPassword!" />
-		<parameter name="wusername" value="rockybar" />
-		<parameter name="wpassword" value="rocky@130589" />
+	<test name="ChromeTest2">
+		<parameter name="chromeDriverPath" value="C:\DriversChrome\chromedriver.exe" />
+		<parameter name="searchTerm" value="Selenium WebDriver" />
+		<parameter name="url" value="https://www.google.com/" />
 
 		<classes>
-			<class name="com.testclass.LoginTest" />
+			<class name="selenium.LaunchBrowser1" />
 		</classes>
 	</test>
 
