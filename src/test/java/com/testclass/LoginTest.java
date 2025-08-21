@@ -9,7 +9,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.Parameters;
-import com.page.LoginPage;
+import pages.LoginPage;
+
+
 
 public class LoginTest {
 
