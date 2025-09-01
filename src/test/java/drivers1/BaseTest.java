@@ -9,22 +9,27 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseTest {
 	 	WebDriver driver;
 	    
 	    @BeforeMethod
-	    @Parameters("browser")
+	    @Parameters({"browser"})
 	    public void setUp(String browser) {
 	    	
 	        if (browser.equalsIgnoreCase("chrome")) {
-	            System.setProperty("webdriver.chrome.driver", "C:\\DriversChrome\\chromedriver.exe");
+	           // System.setProperty("webdriver.chrome.driver", "C:\\DriversChrome\\chromedriver.exe");
+	        	WebDriverManager.chromedriver().setup();
 	            driver = new ChromeDriver();
 	        } else if (browser.equalsIgnoreCase("firefox")) {
-	        	System.setProperty("webdriver.gecko.driver", "C:\\DriversFirefox\\geckodriver.exe");        
-	            FirefoxOptions options = new FirefoxOptions();
-	            options.setBinary("C:\\Users\\Acer\\AppData\\Local\\Mozilla Firefox\\firefox.exe"); // exact path
-	            options.setAcceptInsecureCerts(true);
-	            driver = new FirefoxDriver(options);
+//	        	System.setProperty("webdriver.gecko.driver", "C:\\DriversFirefox\\geckodriver.exe");        
+//	            FirefoxOptions options = new FirefoxOptions();
+//	            options.setBinary("C:\\Users\\Acer\\AppData\\Local\\Mozilla Firefox\\firefox.exe"); // exact path
+//	            options.setAcceptInsecureCerts(true);
+	        	WebDriverManager.firefoxdriver().setup();
+	           // driver = new FirefoxDriver(options);
+	        	driver = new FirefoxDriver();
 	        	
 	        } else {
 	            throw new IllegalArgumentException("Invalid browser value: " + browser);

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-21T23:45:39 IST" name="AutomationSuite" finished-at="2025-08-21T23:46:19 IST" duration-ms="39650">
+  <suite started-at="2025-08-29T07:55:39 IST" name="AutomationSuite" finished-at="2025-08-29T07:56:29 IST" duration-ms="50291">
     <groups>
     </groups>
-    <test started-at="2025-08-21T23:45:39 IST" name="ChromeTests" finished-at="2025-08-21T23:45:58 IST" duration-ms="18757">
+    <test started-at="2025-08-29T07:55:39 IST" name="ChromeTests" finished-at="2025-08-29T07:56:13 IST" duration-ms="34014">
       <class name="drivers1.Test1">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-21T23:45:39 IST" name="setUp" finished-at="2025-08-21T23:45:43 IST" duration-ms="4210" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-29T07:55:39 IST" name="setUp" finished-at="2025-08-29T07:55:53 IST" duration-ms="13403" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-21T23:45:43 IST" name="invalidLoginTest" finished-at="2025-08-21T23:45:48 IST" duration-ms="5007" status="PASS">
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-29T07:55:53 IST" name="invalidLoginTest" finished-at="2025-08-29T07:56:00 IST" duration-ms="7242" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,11 +34,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-21T23:45:48 IST" name="tearDown" finished-at="2025-08-21T23:45:49 IST" duration-ms="543" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-29T07:56:00 IST" name="tearDown" finished-at="2025-08-29T07:56:01 IST" duration-ms="764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-21T23:45:49 IST" name="setUp" finished-at="2025-08-21T23:45:51 IST" duration-ms="1750" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-29T07:56:01 IST" name="setUp" finished-at="2025-08-29T07:56:06 IST" duration-ms="5194" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-21T23:45:51 IST" name="validLoginTest" finished-at="2025-08-21T23:45:57 IST" duration-ms="6683" status="PASS">
+        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-29T07:56:06 IST" name="validLoginTest" finished-at="2025-08-29T07:56:12 IST" duration-ms="6051" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,15 +65,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-21T23:45:57 IST" name="tearDown" finished-at="2025-08-21T23:45:58 IST" duration-ms="384" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:drivers1.Test1@5ddeb7cb]" started-at="2025-08-29T07:56:12 IST" name="tearDown" finished-at="2025-08-29T07:56:13 IST" duration-ms="1142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- drivers1.Test1 -->
     </test> <!-- ChromeTests -->
-    <test started-at="2025-08-21T23:45:39 IST" name="FirefoxTests" finished-at="2025-08-21T23:46:19 IST" duration-ms="39650">
+    <test started-at="2025-08-29T07:55:39 IST" name="FirefoxTests" finished-at="2025-08-29T07:56:29 IST" duration-ms="50291">
       <class name="drivers1.Test1">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:drivers1.Test1@475c9c31]" started-at="2025-08-21T23:45:39 IST" name="setUp" finished-at="2025-08-21T23:45:48 IST" duration-ms="9182" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:drivers1.Test1@57db2b13]" started-at="2025-08-29T07:55:39 IST" name="setUp" finished-at="2025-08-29T07:56:02 IST" duration-ms="23040" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,7 +84,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:drivers1.Test1@475c9c31]" started-at="2025-08-21T23:45:48 IST" name="invalidLoginTest" finished-at="2025-08-21T23:45:55 IST" duration-ms="6741" status="PASS">
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String)[pri:0, instance:drivers1.Test1@57db2b13]" started-at="2025-08-29T07:56:02 IST" name="invalidLoginTest" finished-at="2025-08-29T07:56:09 IST" duration-ms="6654" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,11 +100,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:drivers1.Test1@475c9c31]" started-at="2025-08-21T23:45:55 IST" name="tearDown" finished-at="2025-08-21T23:45:58 IST" duration-ms="2804" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:drivers1.Test1@57db2b13]" started-at="2025-08-29T07:56:09 IST" name="tearDown" finished-at="2025-08-29T07:56:12 IST" duration-ms="3120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:drivers1.Test1@475c9c31]" started-at="2025-08-21T23:45:58 IST" name="setUp" finished-at="2025-08-21T23:46:06 IST" duration-ms="8048" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:drivers1.Test1@57db2b13]" started-at="2025-08-29T07:56:12 IST" name="setUp" finished-at="2025-08-29T07:56:22 IST" duration-ms="9481" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:drivers1.Test1@475c9c31]" started-at="2025-08-21T23:46:06 IST" name="validLoginTest" finished-at="2025-08-21T23:46:16 IST" duration-ms="10356" status="PASS">
+        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:drivers1.Test1@57db2b13]" started-at="2025-08-29T07:56:22 IST" name="validLoginTest" finished-at="2025-08-29T07:56:27 IST" duration-ms="5544" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,7 +131,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:drivers1.Test1@475c9c31]" started-at="2025-08-21T23:46:16 IST" name="tearDown" finished-at="2025-08-21T23:46:19 IST" duration-ms="2323" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:drivers1.Test1@57db2b13]" started-at="2025-08-29T07:56:27 IST" name="tearDown" finished-at="2025-08-29T07:56:29 IST" duration-ms="2248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
